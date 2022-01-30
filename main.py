@@ -1,8 +1,10 @@
-a = int(input())
-b = int(input())
-c = int(input())
+n = int(input())
+score = list(map(int, input().split()))
+score_copy = []
+for i in range(len(score)):
+  score_copy.append(score[i]/max(score)*100)
 
-mul = a*b*c
+print(sum(score_copy)/len(score_copy))
 
-for i in range(10):
-  print(str(mul).count(str(i)))
+
+
