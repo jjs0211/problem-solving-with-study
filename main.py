@@ -1,10 +1,11 @@
 n = int(input())
-score = list(map(int, input().split()))
-score_copy = []
-for i in range(len(score)):
-  score_copy.append(score[i]/max(score)*100)
+cnt = [1]
 
-print(sum(score_copy)/len(score_copy))
-
-
-
+for i in range(n):
+  cnt.append((i+1)*6)
+  if n == 1:
+    print(1)
+  else:
+    if n<=sum(cnt):
+      print(i+2)
+      break
