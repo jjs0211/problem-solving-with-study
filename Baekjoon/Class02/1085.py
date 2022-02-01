@@ -84,7 +84,10 @@
 # cards = list(map(int, input().split()))
 
 # data = list(combinations(cards,3))
-# result = []
+# result = {}
 # for i in data:
-#   result.append(abs(sum(i)-m))
-# print(sum(data[result.index(min(result))])) // 2798 블랙잭(수정해야함)
+#   if sum(i)<=m:
+#     result[sum(i)] = abs(sum(i)-m)
+#   else:
+#     continue
+# print(min(result, key = result.get)) // 2798 블랙잭
