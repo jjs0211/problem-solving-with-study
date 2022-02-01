@@ -1,11 +1,11 @@
-n = int(input())
-cnt = [1]
+from itertools import combinations
 
-for i in range(n):
-  cnt.append((i+1)*6)
-  if n == 1:
-    print(1)
-  else:
-    if n<=sum(cnt):
-      print(i+2)
-      break
+n ,m = map(int, input().split())
+cards = list(map(int, input().split()))
+
+data = list(combinations(cards,3))
+result = []
+for i in data:
+  result.append(abs(sum(i)-m))
+print(sum(data[result.index(min(result))]))
+

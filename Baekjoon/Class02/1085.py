@@ -60,3 +60,31 @@
 #       break // 2292 벌집
 
 
+# import copy
+# t = int(input())
+# for _ in range(t):
+#   k = int(input()) //층
+#   n = int(input()) //호
+#   # zero_floor = list(range(1, n+1))
+#   ls = list(range(1, n+1)) // 0층
+#   ls_cp = [0 for _ in range(n)] // 0으로 초기화
+#   for i in range(k):
+#     for j in range(n):
+#       if j == 0:
+#         ls_cp[j] = 1
+#       else:
+#         ls_cp[j] = sum(ls[:j+1])
+#     ls = copy.deepcopy(ls_cp)
+#   print(ls[n-1]) // 2775 부녀회장이 될테야
+
+
+# from itertools import combinations
+
+# n ,m = map(int, input().split())
+# cards = list(map(int, input().split()))
+
+# data = list(combinations(cards,3))
+# result = []
+# for i in data:
+#   result.append(abs(sum(i)-m))
+# print(sum(data[result.index(min(result))])) // 2798 블랙잭(수정해야함)
