@@ -10,6 +10,4 @@ for i in data:
     result[sum(i)] = abs(sum(i)-m)
   else:
     continue
-print(min(result, key = result.get))
-print(result)
-
+print(min(result, key = result.get)) // 2798 블랙잭
