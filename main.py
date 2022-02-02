@@ -1,15 +1,13 @@
-from itertools import combinations
+a, b, v = map(int, input().split())
 
-n ,m = map(int, input().split())
-cards = list(map(int, input().split()))
-
-data = list(combinations(cards,3))
-result = {}
-for i in data:
-  if sum(i)<=m:
-    result[sum(i)] = abs(sum(i)-m)
+cnt = 0
+h = 0
+while 1:
+  cnt +=1
+  h = h + a
+  if h >= v:
+    break
   else:
-    continue
-print(min(result, key = result.get))
-print(result)
+    h -= b
 
+print(cnt)
