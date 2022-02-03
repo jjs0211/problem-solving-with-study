@@ -7,4 +7,4 @@ words_list = list(set(words_list))
 result = sorted(words_list, key = lambda word: (len(word), word))
 
 for i in result:
-  print(i)
+  print(i) // 시간이 오래 걸림

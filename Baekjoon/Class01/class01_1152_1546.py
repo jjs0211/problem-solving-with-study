@@ -1,5 +1,5 @@
-# str = input().split()
-# print(str) // 1152 단어의 개수
+# str = list(input().split())
+# print(len(str)) // 1152 단어의 개수
 
 
 # arr = []

@@ -1,6 +1,10 @@
-import math
-a, b, v = map(int, input().split())
+n = int(input())
+words_list = []
+for _ in range(n):
+  words = input()
+  words_list.append(words)
+words_list = list(set(words_list))
+result = sorted(words_list, key = lambda word: (len(word), word))
 
-day = (v-b)/(a-b) # 정상에 도달하면 밤에 미끄러지지 않는 것을 고려 day = v/(a-b)라고 하면 정상에 도달해도 밤에 내려와 다음 날 다시 올라가야하는 일이 생김
-print(math.ceil(day))
-
+for i in result:
+  print(i)
