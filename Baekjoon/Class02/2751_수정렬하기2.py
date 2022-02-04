@@ -8,4 +8,4 @@ for _ in range(n):
 
 for i in sorted(num_list):
   sys.stdout.write(str(i)+'\n') # 1428ms
-  print(i) # 1580ms
+  print(i) # 1580mse 답
