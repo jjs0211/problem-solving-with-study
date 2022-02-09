@@ -9,4 +9,4 @@ for i in info:
   for j in info:
     if i[0] < j[0] and i[1] < j[1]: # 다 비교하면서 자기보다 몸무게와 키 둘 다 큰 사람이 있으면 랭크 +1
       rank+=1
-  print(rank) # 
+  print(rank, end = ' ')

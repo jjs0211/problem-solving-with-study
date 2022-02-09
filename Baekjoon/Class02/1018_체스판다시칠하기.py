@@ -5,8 +5,8 @@ for _ in range(n):
   board.append(BW)
 
 result = []
-for i in range(n-7):
-  for j in range(m-7):
+for i in range(n-7): # 세로
+  for j in range(m-7): # 가로
     cnt_w=0 # 처음이 w 시작일 때
     cnt_b=0 # 처음이 b 시작일 때
     for x in range(i, i+8):
