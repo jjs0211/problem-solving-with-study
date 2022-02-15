@@ -94,21 +94,21 @@
 # print(sum(int(i) for i in num)) // 숫자의 합 다른 방법
 
 
-# word = input().upper()
-# result = {}
+word = input().upper()
+result = {}
 
-# for i in word:
-#   if i not in result:
-#     result[i] = 1
-#   else:
-#     result[i] +=1
+for i in word:
+  if i not in result:
+    result[i] = 1
+  else:
+    result[i] +=1
 
-# reverse_result = dict(map(reversed,result.items()))
+reverse_result = dict(map(reversed,result.items()))
 
-# if list(result.values()).count(max(result.values())) >=2:
-#   print("?")
-# else:
-#   print(reverse_result[max(result.values())]) // 1157 단어공부
+if list(result.values()).count(max(result.values())) >=2:
+  print("?")
+else:
+  print(reverse_result[max(result.values())]) // 1157 단어공부
 
 
 # n = int(input())
