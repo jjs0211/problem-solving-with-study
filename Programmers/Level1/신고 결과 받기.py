@@ -5,9 +5,9 @@ def solution(id_list, report, k):
     reported = []
     idx_reported=[]
     result = {}
-    for i in range(len(report)):
-        reporter.append(report[i].split()[0]) # 신고자 리스트
-        reported.append(report[i].split()[1]) # 피신고자 리스트
+    for i in report:
+        reporter.append(i.split()[0]) # 신고자 리스트
+        reported.append(i.split()[1]) # 피신고자 리스트
     set_reported = set(reported)
     set_reported = list(set_reported) # 피신고자 count 편하게 세기 위해 중복을 지운 리스트를 하나 만듦
     for j in range(len(set_reported)):
