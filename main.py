@@ -1,3 +1,13 @@
-a = [1,2,3,4,5]
-print(a[:-1])
-print(a[:len(a)])
+import heapq, sys
+heap = []
+input = sys.stdin.readline
+n = int(input())
+for _ in range(n):
+    x = int(input())
+    if x == 0:
+        if not heap:
+            print(0)
+        else:
+            print(heapq.heappop(heap)[1])
+    else:
+        heapq.heappush(heap, (abs(x), x))
