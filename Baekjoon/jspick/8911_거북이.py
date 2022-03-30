@@ -8,10 +8,10 @@ for _ in range(t):
     y = 0
     x_list = []
     y_list = []
-    cnt = 0
+    cnt = 0 # 1은 위쪽, 2는 왼쪽, 3은 아래쪽, 4는 오른쪽
     for i in control:
-        if direction == 'y':
-            if cnt%4 == 0:
+        if direction == 'y': # 내가 바라보는 방향이 y 방향이면
+            if cnt%4 == 0: # 위쪽을 보고 있다면
                 if i == 'F':
                     y += 1
                 elif i == 'B':
@@ -21,7 +21,7 @@ for _ in range(t):
                     cnt += 1
                     continue
                 elif i == 'R':
-                    if cnt == 0:
+                    if cnt == 0: # cnt가 0일 때는 1을 빼면 -1이 되므로 cnt가 0일 때나 4일 때나 같으므로 3으로 바꿔줌
                         cnt = 3
                         direction = 'x'
                         continue
@@ -73,7 +73,7 @@ for _ in range(t):
                     continue
             x_list.append(x)
 
-    if not x_list:
+    if not x_list: # y축에만 선이 그어져 x 축에는 선이 없을 때
         x_list.append(0)
     if not y_list:
         y_list.append(0)
