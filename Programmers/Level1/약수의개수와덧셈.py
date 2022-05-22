@@ -1,9 +1,12 @@
-import math
 def solution(left, right):
-    result = 0
-    for i in range(left, right+1):
-        if len(str(math.sqrt(i))) == 3 or len(str(math.sqrt(i))) == 3 and str(math.sqrt(i))[-1] == '0':
-            result -= i
+    answer = 0
+    for i in range(left, right + 1):
+        cnt = 0
+        for j in range(1, i+1):
+            if i%j == 0:
+                cnt += 1
+        if cnt%2 == 0:
+            answer += i
         else:
-            result += i
-    return result
+            answer -= i
+    return answer
