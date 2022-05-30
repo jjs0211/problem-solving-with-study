@@ -1,5 +1,5 @@
 # 🐇 코딩 테스트 스터디 6팀 🐇  
- 천준석, 박보근, 장준수, 강주희, 박상언, 유하얀, 이시은
+ 천준석, 박보근, 장준수, 강주희, 유하얀, 이시은
 - - -
 <h1>Intro</h1> 
 Github 주소 : https://github.com/JunSeokCheon/problem-solving-with-study
